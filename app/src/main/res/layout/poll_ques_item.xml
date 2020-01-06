@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_ques"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Question?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:text="option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:text="option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:text="option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:text="option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_poll_vote"
+            android:textColor="#ffffff"
+            android:background="@android:color/holo_purple"
+            android:text="VOTE"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/tv_poll_expired"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:text="Total vote:- 5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

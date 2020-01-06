@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/cardview_light_background"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/image_viewpager"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.tabs.TabLayout
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                android:layout_gravity="bottom|center"
+                android:id="@+id/tab_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <TextView
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:gravity="center"
+            android:text="Post categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <Button
+            fontPath="fonts/Caviar_Dreams_Bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/btn_show_cat"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="View all Post"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

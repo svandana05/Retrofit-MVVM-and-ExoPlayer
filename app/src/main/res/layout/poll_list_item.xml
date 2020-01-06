@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_poll_ques"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:padding="5dp"
+                android:text="Question?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_poll_ago"
+                android:layout_marginLeft="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:padding="2dp"
+                android:text="2 Days ago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_poll_vote"
+                    android:textColor="#ffffff"
+                    android:background="@android:color/holo_purple"
+                    android:text="VOTE NOW"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:id="@+id/tv_poll_expired"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

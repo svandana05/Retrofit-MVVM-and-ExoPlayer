@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RetrofitApk</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- https://api.prokerala.com/docs/ -->
+    <string name="api_key">a3262eea72cb3c04cf1fdb8735c9d6b67a2529369ddd891e878d3e0b0c99054d</string>
+    <string name="get_your_today_horoscope">Get Your Today\'s Horoscope</string>
+    <string name="post_categories">Post Categories</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Video</string>
+    <string name="poll">Poll</string>
+
+</resources>

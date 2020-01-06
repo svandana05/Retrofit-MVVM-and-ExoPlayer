@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.retrofitapk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="RtrofitExoplayerMVVM"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VideoActivity" android:label="Rgyan Video Posts" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PollQuestionActivity" android:label="Poll Question" android:parentActivityName=".PollsActivity" />
+        <activity
+            android:name=".PollsActivity"
+            android:parentActivityName=".MainActivity" android:label="Rgyan Polls" />
+        <activity
+            android:name=".ShowPostActivity"
+            android:parentActivityName=".MainActivity" android:label="Rgyan Posts" />
+        <activity
+            android:name=".HoroDetailActivity"
+            android:parentActivityName=".MainActivity" android:label="Horoscope Detail" />
+        <activity android:name=".MainActivity" android:label="RtrofitExoplayerMVVM">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

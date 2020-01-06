@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            fontPath="fonts/Caviar_Dreams_Bold.ttf"
+            tools:ignore="MissingPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:text="@string/post_categories"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                 />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_below="@id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="7dp"
+                android:text="@string/get_your_today_horoscope"
+                android:layout_below="@id/list"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_below="@+id/textView"
+                android:id="@+id/horoscopeList"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/horoscopeRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"/>
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:background="#50ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:visibility="gone"
+                    android:id="@+id/img_LeftScroll"
+                    android:tint="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_left"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"/>
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:background="#50ffffff"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:id="@+id/img_right_scroll"
+                    android:tint="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_chevron_right"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"/>
+            </RelativeLayout>
+
+
+            <Button
+                fontPath="fonts/Caviar_Dreams_Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_margin="20dp"
+                android:id="@+id/btn_show_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="See All Posts"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:layout_below="@id/horoscopeList"/>
+
+            <Button
+                fontPath="fonts/Caviar_Dreams_Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/btn_show_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:text="See All Videos"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:layout_below="@id/btn_show_post"/>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/btn_show_video"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    fontPath="fonts/Caviar_Dreams_Bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:id="@+id/btn_active_polls"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Active Polls"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    fontPath="fonts/Caviar_Dreams_Bold.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:id="@+id/btn_expired_polls"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Expired Polls"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>
